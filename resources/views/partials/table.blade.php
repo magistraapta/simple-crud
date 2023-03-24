@@ -4,7 +4,7 @@
         <th scope="col">Id</th>
         <th scope="col">Nama</th>
         <th scope="col">NIM</th>
-        <th scope="col">Email</th>
+        <th scope="col">Password</th>
       </tr>
     </thead>
     <tbody class="table-group-divider">
@@ -13,7 +13,7 @@
             <th scope="row">1</th>
             <td>{{ $m["nama"] }}</td>
             <td>{{ $m["NIM"] }}</td>
-            <td>{{ $m["email"] }}</td>
+            <td>{{ $m["password"] }}</td>
       </tr>
     @endforeach
       
