@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Controllers\mhsController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -14,5 +14,15 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('index',[
+        "title"=>"Home"
+    ]);
 });
+
+Route::get('/update', function () {
+    return view('update', [
+        "title"=>"Update"
+    ]);
+});
+
+Route::get('/', [mhsController::class, 'show']);
