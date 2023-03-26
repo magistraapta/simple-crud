@@ -13,4 +13,13 @@ class mhsController extends Controller
             "mhs"=>mahasiswa::all()
         ]);
     }
+
+    public function find($id){
+
+
+        return view('detail', [
+            "title"=>"Detail Mahasiswa",
+            "mhs"=>mahasiswa::find($id)
+        ]);
+    }
 }

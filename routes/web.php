@@ -25,4 +25,6 @@ Route::get('/update', function () {
     ]);
 });
 
+Route::get('/detail/{slug}', [mhsController::class, 'find']);
+
 Route::get('/', [mhsController::class, 'show']);

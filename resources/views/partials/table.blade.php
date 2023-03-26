@@ -10,10 +10,12 @@
     <tbody class="table-group-divider">
     @foreach ($mhs as $m )
         <tr>
-            <th scope="row">1</th>
+          <a href="/detail">
+            <th scope="row"><a href="/detail/{{ $m["id"] }}">{{ $m["id"] }}</a></th>
             <td>{{ $m["nama"] }}</td>
             <td>{{ $m["NIM"] }}</td>
             <td>{{ $m["password"] }}</td>
+          </a>
       </tr>
     @endforeach
       
